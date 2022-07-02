@@ -17,8 +17,7 @@ if (!config.get('jwtPrivateKey')) {
   console.error('FATAL ERROR: jwtPrivateKey is not defined.');
   process.exit(1);
 }
-//mongoose.connect('mongodb://localhost/vidly') // local db
-mongoose.connect('mongodb://optima:Optima123Dn@34.230.190.205:27017/pardali_service')
+mongoose.connect('mongodb://localhost/vidly') // local db
   .then(() => console.log('Connected to MongoDB...'))
   .catch(err => console.error('Could not connect to MongoDB...'));
 
