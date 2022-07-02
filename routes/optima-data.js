@@ -27,12 +27,12 @@ router.get('/', (req,res) => {
         "setting": 1
     })
 
-    fetch('https://optimala.kelltontech.net/dms/api/chart/get_realtime_asset_data', {
+    fetch('/dms/api/chart/get_realtime_asset_data', {
     method: 'POST',
     body: payload,
     headers: {
         'Content-type': 'application/json; charset=UTF-8',
-        'authorization' : 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrZWxsdG9uLXNhaSIsImF1dGgiOiJQcm9kdWN0aW9uIEVuZ2luZWVyIiwiaWQiOiI2MWY4Yzc0ZWFhYWIwZjEyNDAzMDEzNDAiLCJ1c2VybmFtZSI6ImtlbGx0b24tc2FpIiwiZW1haWxpZCI6InNhaWt1bWFyLnBhdG5haWt1bmlAa2VsbHRvbnRlY2guY29tIiwiZXhwIjoxNjU1OTA2MzM4fQ.aWZIPImln2D0xTCX-NVPodQb-O-ZVEe9lYeK_0xIXdzih_WNg2oT8MHr80lVmURgWHhNfZ_wk7IApRi7LxqMVQ'
+        'authorization' : 'Bearer'
         }
     })
     // Parse JSON data
